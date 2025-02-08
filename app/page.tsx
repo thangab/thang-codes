@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Navigation from './_components/navigation';
 import { experiences } from '@/data/experiences';
 import useVisibility from '@/hooks/useVisibility';
+import Link from 'next/link';
 
 export default function Home() {
   const parentRef = useRef<HTMLElement>(null); // Référence pour l'élément parent
@@ -24,6 +25,11 @@ export default function Home() {
             experiences.
           </p>
           <Navigation activeBlock={visibleBlock} />
+        </div>
+        <div className="ml-1 mt-8 flex items-center">
+          <p className="leading-normal">
+            Contact: <Link href="mailto:me@thang.codes">me@thang.codes</Link>
+          </p>
         </div>
       </header>
       <main ref={parentRef} className="pt-24 lg:w-[52%] lg:py-24">
