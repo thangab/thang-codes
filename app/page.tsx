@@ -20,14 +20,14 @@ export default function Home() {
           <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
             Front End Engineer
           </h2>
-          <p className="mt-4 max-w-xs leading-normal">
+          <p className="mt-4 max-w-xs leading-normal text-slate-200">
             I like to build solid and scalable digital products with great user
             experiences.
           </p>
           <Navigation activeBlock={visibleBlock} />
         </div>
         <div className="ml-1 mt-8 flex items-center">
-          <p className="leading-normal">
+          <p className="leading-normal text-slate-200">
             Contact: <Link href="mailto:me@thang.codes">me@thang.codes</Link>
           </p>
         </div>
@@ -43,14 +43,14 @@ export default function Home() {
             </h2>
           </div>
           <div>
-            <p className="mb-4">
+            <p className="mb-4 text-slate-200">
               I’m a developer dedicated to building accessible, pixel-perfect
               user interfaces that seamlessly combine thoughtful design with
               solid engineering. My passion lies at the intersection of design
               and development, creating experiences that are visually stunning
               and meticulously optimized for performance and usability.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-slate-200">
               Currently, I serve as a Senior Front-End Engineer at Le Parisien,
               focusing on web performance. I play a key role in developing and
               maintaining UI components that drive Le Parisien’s frontend,
@@ -58,7 +58,7 @@ export default function Home() {
               best practices to deliver an inclusive and exceptional user
               experience.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-slate-200">
               In the past, I’ve had the privilege of developing software in
               diverse environments, ranging from agile start-ups to
               well-established corporations. These experiences have allowed me
@@ -102,7 +102,7 @@ export default function Home() {
                           </span>
                         </span>
                       </h3>
-                      <p className="mt-2 text-sm leading-normal">
+                      <p className="mt-2 text-sm leading-normal text-slate-200">
                         {exp.description}
                       </p>
                       <ul
@@ -143,7 +143,7 @@ export default function Home() {
                       Build a website with nextJs and Contentful (headless cms)
                       - Kimthanh.info
                     </h3>
-                    <p className="mt-2 text-sm leading-normal">
+                    <p className="mt-2 text-sm leading-normal text-slate-200">
                       The restaurant needs a website to showcase its menu, which
                       must be updated frequently. To achieve this, I used
                       Contentful in combination with Next.js for Incremental
@@ -169,7 +169,7 @@ export default function Home() {
                       Redesign a new smart search bar and the result page -
                       Veepee.fr
                     </h3>
-                    <p className="mt-2 text-sm leading-normal">
+                    <p className="mt-2 text-sm leading-normal text-slate-200">
                       Added the searchbar component to the design system with
                       web accessibility features (enabling users to navigate and
                       select results using the keyboard). Also implemented URL
@@ -193,7 +193,7 @@ export default function Home() {
                       Add feature on an interactive map with mapbox -
                       seloger.com
                     </h3>
-                    <p className="mt-2 text-sm leading-normal">
+                    <p className="mt-2 text-sm leading-normal text-slate-200">
                       I used the Mapbox library on the SeLoger website to
                       display the map showing the property&apos;s location.
                       Additionally, I needed to add a feature that calculates
