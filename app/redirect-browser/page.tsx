@@ -1,23 +1,18 @@
 'use client';
+// pages/universal.js
 import { useEffect } from 'react';
 
-export default function OpenNativeBrowser() {
+export default function UniversalLink() {
   useEffect(() => {
-    // URL à ouvrir dans le navigateur natif
-    const url = 'https://thang.codes';
-    // Ouvre la page dans un nouvel onglet/une nouvelle fenêtre (navigateur natif)
-    window.open(url, '_blank');
+    // On tente une redirection vers le lien universel
+    window.location.href = 'https://thang.codes';
   }, []);
 
   return (
     <div style={{ padding: '2rem', textAlign: 'center' }}>
-      <h1>Ouverture dans le navigateur natif...</h1>
+      <h1>Redirection...</h1>
       <p>
-        Sinon{' '}
-        <a href="https://thang.codes" target="_blank" rel="noopener noreferrer">
-          cliquez ici
-        </a>
-        .
+        Sinon, <a href="https://thang.codes">cliquez ici</a>.
       </p>
     </div>
   );
