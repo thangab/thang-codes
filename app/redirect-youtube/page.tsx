@@ -5,17 +5,7 @@ export default function RedirectYoutube() {
   useEffect(() => {
     // Exemple : vidéo YouTube avec l'ID "dQw4w9WgXcQ"
     // Deep link pour ouvrir l'app native YouTube
-
-    const userAgent =
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      navigator.userAgent || navigator.vendor || (window as any).opera;
-    // const isAndroid = /android/i.test(userAgent);
-    const isiOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
-
     const appLink = 'youtube://www.youtube.com/watch?v=dQw4w9WgXcQ';
-    const androidAppLink =
-      'intent://www.youtube.com/watch?v=dQw4w9WgXcQ#Intent;package=com.google.android.youtube;scheme=https;end;';
-    const link = isiOS ? appLink : androidAppLink;
     // Fallback : lien vers la version web de YouTube
     const fallbackLink = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 
@@ -23,7 +13,7 @@ export default function RedirectYoutube() {
     const start = Date.now();
 
     // Tentative d'ouverture de l'app native en assignant à window.location.href
-    window.location.href = link;
+    window.location.href = appLink;
 
     // Rediriger vers le fallback après 1,5 seconde si l'app n'est pas lancée
     setTimeout(() => {
